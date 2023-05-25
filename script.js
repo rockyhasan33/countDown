@@ -1,4 +1,3 @@
-let days = document.querySelector('#day');
 let hours = document.querySelector('#hour');
 let minutes = document.querySelector('#minute');
 let seconds = document.querySelector('#second');
@@ -22,26 +21,17 @@ let int = null;
 
 
 function countingStart() {
-    let getValDays = days.value;
     let getValHours = hours.value;
     let getValMinutes = minutes.value;
     let getValSeconds = seconds.value;
    
-
-    if(seconds.value == 60) {
-        seconds.value = 0;
-        minutes.value--;
+    if(seconds.value <= 0) {
+        seconds.value = 59;
+        minutes.value = 1;
     }
+    
 
-    if(minutes.value == 60) {
-        minutes.value = 0;
-        hours.value--;
-    }
-
-    if(hours.value == 0) {
-        hours.value = 0;
-        days.value--;
-    }
-
+    
+    
 }
 

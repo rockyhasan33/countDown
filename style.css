@@ -17,7 +17,7 @@
 
 .center {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items:center ;
@@ -65,7 +65,7 @@ input[type='number']:hover {
 }
 
 .buttons {
-    grid-column: 2/4;
+    grid-column: 2/3;
 }
 
 button {
