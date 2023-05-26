@@ -1,4 +1,4 @@
-let hours = document.querySelector('#hour');
+// let hours = document.querySelector('#hour');
 let minutes = document.querySelector('#minute');
 let seconds = document.querySelector('#second');
 let playBtn = document.querySelector('.play');
@@ -34,4 +34,32 @@ function countingStart() {
     
     
 }
+
+
+
+
+
+const futureDate = new Date(2023, 5, 26, 11, 20);
+
+const futureTime = futureDate.getTime();
+
+const currentDate = new Date().getTime();
+
+const t = futureTime - currentDate
+
+const oneDay = 24 * 60 * 60 * 1000;
+
+const oneHour = 60 * 60 * 1000;
+
+const oneMinute = 60 * 1000;
+
+
+let days = Math.floor(t / oneDay);
+
+let hours = (t % oneDay) / oneHour;
+
+hours = Math.floor(hours)
+
+console.log(hours)
+
 
